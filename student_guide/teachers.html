@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O'qituvchilar</title>
+  <link rel="stylesheet" href="css/guide.css" />
+  <style>
+    :root { --title-grad: linear-gradient(90deg, #fb923c, #f87171); }
+    .page-teachers #guide-modal-title {
+      background: linear-gradient(90deg, #fb923c, #f87171);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+<body class="page-teachers">
+  <header class="page-header hero-orange">
+    <div class="inner">
+      <a class="back-btn" href="index.html">← Bosh sahifaga qaytish</a>
+      <h1 class="title-gradient">O'qituvchilar</h1>
+      <p class="subtitle">O'qituvchilaringiz bilan tanishing</p>
+    </div>
+  </header>
+
+  <main class="grid cols-3">
+    <article class="detail-card" data-teacher-id="1" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Dr. Sardor Rahimov</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Matematika</p>
+          <p>Fan Fakulteti</p>
+          <p>A Bino, 301-xona</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-teacher-id="2" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Prof. Li Chen</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Fizika</p>
+          <p>Fan Fakulteti</p>
+          <p>Laboratoriya Binosi, 205-xona</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-teacher-id="3" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/photo-1758270704587-43339a801396?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Dr. Malika Azimova</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Ingliz tili adabiyoti</p>
+          <p>Gumanitar Fakulteti</p>
+          <p>B Bino, 102-xona</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-teacher-id="4" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Prof. Bobur Karimov</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Kompyuter fanlari</p>
+          <p>Texnologiya Fakulteti</p>
+          <p>Texnologiya Binosi, 401-xona</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-teacher-id="5" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/photo-1758270704925-fa59d93119c1?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Dr. Dilnoza Yusupova</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Kimyo</p>
+          <p>Fan Fakulteti</p>
+          <p>Laboratoriya Binosi, 310-xona</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-teacher-id="6" tabindex="0" role="button">
+      <div class="thumb tall">
+        <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?w=1080" alt="" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(234,88,12,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Prof. Anvar Toshmatov</h3>
+        <div class="meta">
+          <p style="color:#fb923c;font-weight:600;">Tarix</p>
+          <p>Gumanitar Fakulteti</p>
+          <p>B Bino, 205-xona</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div id="guide-modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close" aria-label="Yopish">&times;</button>
+      <h2 id="guide-modal-title"></h2>
+      <div id="guide-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+  <script src="js/teachers.js"></script>
+</body>
+</html>

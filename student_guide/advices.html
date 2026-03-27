@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yangi Talabalar Uchun Maslahatlar</title>
+  <link rel="stylesheet" href="css/guide.css" />
+  <style>
+    :root { --title-grad: linear-gradient(90deg, #facc15, #fb923c); }
+    .page-advices #guide-modal-title {
+      background: linear-gradient(90deg, #facc15, #fb923c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  </style>
+</head>
+<body class="page-advices">
+  <header class="page-header hero-yellow">
+    <div class="inner">
+      <a class="back-btn" href="index.html">← Bosh sahifaga qaytish</a>
+      <h1 class="title-gradient">Yangi Talabalar Uchun Maslahatlar</h1>
+      <p class="subtitle">Yangi va xorijiy talabalar uchun qadam-baqadam qo'llanmalar</p>
+    </div>
+  </header>
+
+  <main class="grid">
+    <article class="detail-card" data-advice-id="1" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1771758249853-415175dc29b9?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Ro'yxatdan o'tish</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Talaba Hujjatlarini Olish</h3>
+        <div class="meta">
+          <p>Muddat: 1-2 hafta</p>
+          <p>5 ta qadam</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-advice-id="2" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1771758249853-415175dc29b9?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Immigratsiya</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Viza Uzaytirish Jarayoni</h3>
+        <div class="meta">
+          <p>Muddat: 2-4 hafta</p>
+          <p>6 ta qadam</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-advice-id="3" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1774078618445-ca7f78a2d830?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Uy-joy</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Turar Joy Topish</h3>
+        <div class="meta">
+          <p>Muddat: Darhol</p>
+          <p>5 ta qadam</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-advice-id="4" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1770359718280-817b01057e02?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Moliya</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Bank Hisobi Ochish</h3>
+        <div class="meta">
+          <p>Muddat: O'sha kun</p>
+          <p>5 ta qadam</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-advice-id="5" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1547817752-c23df0357f18?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Akademik</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Kursga Ro'yxatdan O'tish</h3>
+        <div class="meta">
+          <p>Semestrning birinchi haftasi</p>
+          <p>5 ta qadam</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" data-advice-id="6" tabindex="0" role="button">
+      <div class="thumb">
+        <img src="https://images.unsplash.com/photo-1764885415760-d3d8fff41fe3?w=1080" alt="" />
+        <span class="badge" style="background:#ca8a04;">Sog'liq</span>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(202,138,4,0.75),transparent);pointer-events:none;"></div>
+      </div>
+      <div class="body">
+        <h3>Tibbiy Sug'urta Olish</h3>
+        <div class="meta">
+          <p>Muddat: Birinchi oy</p>
+          <p>5 ta qadam</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div id="guide-modal-overlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button type="button" class="modal-close" aria-label="Yopish">&times;</button>
+      <h2 id="guide-modal-title"></h2>
+      <div id="guide-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+  <script src="js/advices.js"></script>
+</body>
+</html>
