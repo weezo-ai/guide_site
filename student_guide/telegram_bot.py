@@ -12,7 +12,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+BOT_TOKEN = os.getenv("8699011003:AAFOxUaHR0NYiXF8uaRqaTge7a8ieNJTmJo", "").strip()
 STUDENT_GUIDE_URL = os.getenv("STUDENT_GUIDE_URL", "https://example.com").strip()
 
 
